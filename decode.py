@@ -384,7 +384,7 @@ def decrypt_lua(input_string):
     # expression_pattern = r'(?:[(]\s*)*\d+[)]*(?:\s*[-+*/]\s*(?:[(]*\s*\d+(?:\s*[)])*))+'
     # calculated_string = re.sub(expression_pattern, do_math, transformed_string)
     
-    return decoded_string
+    return merged_decrypt_string
 
 def decrypt_file(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
